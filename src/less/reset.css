@@ -1,0 +1,95 @@
+@charset "utf-8";
+/*reset css  重置样式  让浏览器表现一致*/
+body {
+  font-size: 14px;
+  color: #333;
+}
+*,
+*::before,
+*::after {
+  /*通配所有的标签和伪元素*/
+  margin: 0;
+  padding: 0;
+  /*避免宽度溢出 造成横向滚动条*/
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*点击高亮设置 清除  transparent 完成透明*/
+  -webkit-tap-highlight-color: transparent;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  /*在移动端浏览  立体效果 清除*/
+  -webkit-appearance: none;
+}
+/*common css 公用样式  */
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.sn_container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+@font-face {
+  font-family: 'myfont';
+  src: url('../fonts/icomoon.eot?db0wiw');
+  src: url('../fonts/icomoon.eot?db0wiw#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?db0wiw') format('truetype'), url('../fonts/icomoon.woff?db0wiw') format('woff'), url('../fonts/icomoon.svg?db0wiw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'myfont';
+}
+.sn_tabs .icon-ft1::before {
+  content: '\e902';
+}
+.sn_tabs .icon-ft2::before {
+  content: '\e9bd';
+}
+.sn_tabs .icon-ft3::before {
+  content: '\e926';
+}
+.sn_tabs .icon-ft4::before {
+  content: '\e971';
+}
+.sn_tabs .icon-ft5::before {
+  content: '\e9ae';
+}

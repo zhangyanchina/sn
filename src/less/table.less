@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.sn_tabs {
+  width: 100%;
+  background-color: #ccc;
+  height: 100rem/@baseFontSize;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 30rem/@baseFontSize 0;
+  > ul {
+    text-align: center;
+    width: 100%;
+    > li:nth-child(2n) {
+      margin: 0 5%;
+    }
+    > li {
+      width: 15%;
+      display: inline-block;
+      > a {
+        display: block;
+        font-size: 12rem/@baseFontSize;
+        > span {
+          display: block;
+          font-size: 38rem/@baseFontSize;
+        }
+      }
+    }
+    >li:hover a {
+      color: red;
+    }
+  }
+}
